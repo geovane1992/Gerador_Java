@@ -1,5 +1,7 @@
 GIT HUB
-Primeiro - Fazer o commit na minha mÃ¡quina
+Primeiro - Pegar auterações realizadas
+        a - Menu Gir - Remoto - Extração
+Segundo - Fazer o commit na minha mÃ¡quina
 	a - Menu Git - Fazer Commit
-Segundo - Depois fazer o upload para o site para todos verem
+Terceiro - Depois fazer o upload para o site para todos verem
 	a - Menu Git - Remoto - Expandir
