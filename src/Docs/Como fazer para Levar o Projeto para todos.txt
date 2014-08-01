@@ -1,6 +1,6 @@
 GIT HUB
-Primeiro - Pegar auterações realizadas
-        a - Menu Gir - Remoto - Extração
+Primeiro - Pegar alterações realizadas
+        a - Menu Git - Remoto - Extração
 Segundo - Fazer o commit na minha mÃ¡quina
 	a - Menu Git - Fazer Commit
 Terceiro - Depois fazer o upload para o site para todos verem
