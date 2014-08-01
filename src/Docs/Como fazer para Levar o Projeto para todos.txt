@@ -1,0 +1,5 @@
+GIT HUB
+Primeiro - Fazer o commit na minha máquina
+	a - Menu Git - Fazer Commit
+Segundo - Depois fazer o upload para o site para todos verem
+	a - Menu Git - Remoto - Expandir
