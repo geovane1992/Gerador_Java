@@ -31,6 +31,7 @@ public class FrameGenerator extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
@@ -71,6 +72,10 @@ public class FrameGenerator extends javax.swing.JFrame {
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/cadastro.gif"))); // NOI18N
         jPanel1.add(jButton2);
         jButton2.setBounds(210, 220, 100, 70);
+
+        jButton1.setText("jButton1");
+        jPanel1.add(jButton1);
+        jButton1.setBounds(400, 240, 73, 23);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/fundo_tela_principal.jpg"))); // NOI18N
         jPanel1.add(jLabel2);
@@ -128,6 +133,7 @@ public class FrameGenerator extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JFrame jFrame2;
