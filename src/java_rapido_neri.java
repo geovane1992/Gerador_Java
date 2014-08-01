@@ -1,6 +1,4 @@
-/* Desenvolvido por Neri Aldoir Neitzke - www.informaticon.com.br
-   Coordenador do curso de Sistemas da Universidade Ulbra campus Carazinho
-   mais de 1700 vídeo aulas de minha autoria: videoaulas@informaticon.com.br */
+
 
 import java.awt.*;
 import javax.swing.*;
@@ -55,16 +53,11 @@ class java_rapido_neri extends jFrame implements ActionListener, ItemListener, j
     JButton botao_gravar             = new JButton(img_grava);
     JButton botao_alterar            = new JButton(img_altera);
     JButton botao_excluir            = new JButton(img_exclui);
-    
-    
 
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender nossas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
 
     java_rapido_neri()
     {
-         settitle("Sistema Gerador de aplicativos rápidos em java - Prof. Neri www.INFORMATICON.com.br");
+         settitle("Java Code Generator");
          setSize(800,600);
          setLocation(150,80);
          setResizable(true);
@@ -72,7 +65,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
          getContentPane().setBackground(Color.gray);
          getContentPane().setLayout(null);
 
-         lb_titulo          = new JLabel("Gerador de aplicações Rápidas Java - Prof. Neri www.INFORMATICON.com.br");
+         lb_titulo          = new JLabel("Java Code Generator");
          lb_qual_banco      = new JLabel("Escolha o tipo banco de dados.: ");
          lb_nomebanco       = new JLabel("Nome do banco de dados .: ");
          lb_usuario         = new JLabel("Usuário .: ");
@@ -80,20 +73,20 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
          lb_tabelas         = new JLabel("Escolha a tabela do banco .: ");
          lb_labels          = new JLabel("Labels Originais.: ");
          lb_driver          = new JLabel("Driver do banco de Dados .: ");
-         lb_rodape          = new JLabel("Vídeo aulas do Prof. Neri www.INFORMATICON.com.br - ULBRA");
-         lb_tit_tabelas     = new JLabel("Vídeo aulas do Prof. Neri www.INFORMATICON.com.br - ULBRA");
-         lb_tit_gera        = new JLabel("Vídeo aulas do Prof. Neri www.INFORMATICON.com.br");
-         lb_tit_labels      = new JLabel("Vídeo aulas do Prof. Neri www.INFORMATICON.com.br");
+         lb_rodape          = new JLabel(""); //Label rodapé janela
+         lb_tit_tabelas     = new JLabel(""); //Label rodapé janela
+         lb_tit_gera        = new JLabel(""); //Label rodapé janela
+         lb_tit_labels      = new JLabel(""); //Label rodapé janela
          lb_formato_tela    = new JLabel("Escolha o formato");
-         lb_codigo          = new JLabel("Código .: ");
-         lb_nome            = new JLabel("Nome .: ");
-         lb_endereco        = new JLabel("Endereço .: ");
-         lb_numero          = new JLabel("Número .: ");
-         lb_bairro          = new JLabel("Bairro .: ");
-         lb_cidade          = new JLabel("Cidade .: ");
-         lb_uf              = new JLabel("UF .: ");
-         lb_fone            = new JLabel("Telefone .: ");
-         lb_data_nasc       = new JLabel("Data de Nascimento .: ");
+         lb_codigo          = new JLabel("Código: ");
+         lb_nome            = new JLabel("Nome: ");
+         lb_endereco        = new JLabel("Endereço: ");
+         lb_numero          = new JLabel("Número: ");
+         lb_bairro          = new JLabel("Bairro: ");
+         lb_cidade          = new JLabel("Cidade: ");
+         lb_uf              = new JLabel("UF: ");
+         lb_fone            = new JLabel("Telefone: ");
+         lb_data_nasc       = new JLabel("Data de Nascimento: ");
          lb_cor_formulario  = new JLabel("Cor de fundo do Fomulário") ;
          lb_cor_frente_label= new JLabel("Cor frente Label");
          lb_cor_frente_tf   = new JLabel("Cor frente campos");
@@ -109,14 +102,14 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
          tf_driver          = new JTextField();
          tf_troca_label     = new JTextField();
          tf_codigo          = new JTextField("1");
-         tf_nome            = new JTextField("Neri Aldoir Neitzke");
-         tf_endereco        = new JTextField("Rua da Informaticon Cursos");
-         tf_numero          = new JTextField("458");
+         tf_nome            = new JTextField("Fulano da Costa Silva");
+         tf_endereco        = new JTextField("Rua Antônio Borges");
+         tf_numero          = new JTextField("500");
          tf_bairro          = new JTextField("Centro");
-         tf_cidade          = new JTextField("Carazinho");
-         tf_uf              = new JTextField("RS");
-         tf_fone            = new JTextField("(54)3330-1222");
-         tf_data_nasc       = new JTextField("não vou contar");
+         tf_cidade          = new JTextField("Goiânia");
+         tf_uf              = new JTextField("GO");
+         tf_fone            = new JTextField("(00)0000-0000");
+         tf_data_nasc       = new JTextField("");
          
 
          bt_conecta         = new JButton("Conectar com o Banco de Dados");
@@ -200,10 +193,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
          cb_tipobanco.addItem("Firebird");
          cb_tipobanco.addItem("MySQL");
          cb_tipobanco.addItem("Access");
-
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
+         
 
          panel_bancos     .setLayout(null);
          panel_gera_classe.setLayout(null);
@@ -288,9 +278,6 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
          cb_cor_form.addItemListener(this);
 
          
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
          cb_tipobanco .setBounds(310,70,200,20);
          cb_tabelas   .setBounds(250,70,200,20);
          lista_campos .setBounds(50,110,200,280);
@@ -337,9 +324,6 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
          painel_pai.addTab("Escolhendo nomes Labels",panel_labels);
          painel_pai.addTab("Geração da Classe",panel_gera_classe);
          
-         /*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-         Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-         INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
 
          lista_campos.setMultipleMode(true);
 
@@ -422,9 +406,6 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
         jFrame formulario = new java_rapido_neri();
         formulario.setVisible(true);
     }
-    /*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-    Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-    INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
     
     public void itemStateChanged(ItemEvent e)
     {
@@ -699,9 +680,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
         ta_classe_gerada.append("        lb_pesquisa.setBounds(10,20,100,20);\n");
         ta_classe_gerada.append("        tf_pesquisa.setBounds(90,20,200,20);\n");
         ta_classe_gerada.append("        cb_pesquisa.setBounds(330,20,200,20);\n");
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/    
+
         posiciona_labels();
         fonte_cor();
         gera_cor_frente_labels();
@@ -745,9 +724,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
         ta_classe_gerada.append("}\n");
         gera_arquivo();
     }
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
+
     public void gerar_botoes()
     {
         ta_classe_gerada.append("    //Gerando as Imagens dos botoes\n");
@@ -866,9 +843,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
        ta_classe_gerada.append("        cb_pesquisa              .addActionListener(this);\n");
 
     }
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
+
     public void library_detect_class()
     {
         setLibrary();
@@ -892,9 +867,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
          ta_classe_gerada.append("\n");
                            
     }
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/    
+  
     
     public void efetua_conexao()
     {
@@ -1157,9 +1130,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
         }
         
     }
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
+
     public void listar_selecionados()
     {
         lista_seraogerados.removeAll();
@@ -1212,9 +1183,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
              }
 
     }
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/    
+        
     public void lookandfell()
     {
         try
@@ -1302,9 +1271,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
         ta_classe_gerada.append("\n");
 
     }
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/    
+  
     public void gera_textfield()
     {
         ta_classe_gerada.append("    //Irá gerar todos os textfields dos campos das tabelas\n");
@@ -1319,9 +1286,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
         ta_classe_gerada.append("\n");
     }
 
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
+
     public void posiciona_labels()
     {
         ta_classe_gerada.append("        lb_titulo.setBounds(100,20,500,30);\n");
@@ -1368,9 +1333,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
             JOptionPane.showMessageDialog(null,"Não conseguiu posicionar. Erro = "+erro_posicionamento);
         }
     }
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
+
     public void tamanho_campos()
     {
         try
@@ -1439,9 +1402,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
         }
     }
     
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
+
     public void adiciona_ao_getContentPane()
     {
         ta_classe_gerada.append("        \n");
@@ -1508,9 +1469,7 @@ INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
          posiciona_botoes_demonstracao();
 
     }
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
+
     
     public void adiciona_demonstracao_panelajustes()
     {
@@ -2022,8 +1981,3 @@ class configuracoes implements Serializable
     String cor_fundo_tf, cor_form, cor_botoes;
     boolean laf;
 }
-
-
-/*VÍDEO AULAS PROF NERI NEITZKE-www.informaticon.com.br-videoaulasneri@gmail.com
-Ninguém está autorizado a vender essas vídeo aulas a não ser a 
-INFORMATICON ou o próprio professor Neri, se outro vender, denuncie*/
