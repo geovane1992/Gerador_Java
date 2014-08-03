@@ -75,7 +75,7 @@ public class FrameGenerator extends javax.swing.JFrame {
 
         jButton1.setText("jButton1");
         jPanel1.add(jButton1);
-        jButton1.setBounds(400, 240, 73, 23);
+        jButton1.setBounds(400, 230, 110, 40);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/fundo_tela_principal.jpg"))); // NOI18N
         jPanel1.add(jLabel2);
